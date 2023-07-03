@@ -1,0 +1,272 @@
+:root {
+    /* Colors */
+    --white: #F3F4F1;
+    --black: #000000;
+    --green: #8C9480;
+    --orange: #EC4527;
+    --gray: #8C8B83;
+    --coffee: #2A2527;
+    --oro: goldenrod;
+    /* Fonts */
+    --principal-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* HEAD */
+
+
+/* Nav */
+
+@media only screen and (max-width:720px) {}
+
+#navbar {
+    background-color: var(--orange);
+    font-size: 2rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#navbar ul li {
+    margin-right: 2.5rem;
+}
+
+#navbar ul li a {
+    display: block;
+    color: var(--white);
+}
+
+#navbar ul li a:hover {
+    background-color: var(--gray);
+}
+
+#navbar ul li a:visited {
+    color: var(--white);
+}
+
+
+/* BODY */
+
+main {
+    background-color: var(--coffee);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bgnav {
+    height: 200rem;
+}
+
+
+/* Section welcome-section */
+
+#welcome-section h1 {
+    font-size: 3.2rem;
+    color: var(--white);
+}
+
+#welcome-section p {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* Section projects */
+
+#projects {
+    padding: 8rem 0;
+    width: 100%;
+    background-color: var(--gray);
+}
+
+#projects h2 {
+    color: var(--white);
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+#projects h2::after {
+    content: "";
+    display: block;
+    width: 550px;
+    height: 1px;
+    border-bottom: 5px solid var(--white);
+    margin: 0 auto;
+}
+
+.project-tiles {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.project-tile {
+    background-color: var(--green);
+    text-align: center;
+    width: 35rem;
+    height: 35rem;
+    margin-bottom: 5rem;
+    box-shadow: 1px 4px 20px -7px rgba(0, 0, 0, 0.75);
+    border-radius: 1rem;
+}
+
+.project-tile img {
+    height: 80%;
+    width: 95%;
+    position: relative;
+    bottom: 4rem;
+    display: cover;
+    border-radius: 1rem;
+}
+
+.project-tile a {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.button {
+    text-align: center;
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 2rem;
+    display: block;
+    padding: 1rem 1.5rem;
+    background-color: var(--coffee);
+    width: 13%;
+    border-radius: 1rem;
+}
+
+.button:hover {
+    color: var(--coffee);
+    background-color: var(--orange);
+    font-weight: bold;
+}
+
+.button a {
+    color: var(--white);
+}
+
+
+/* Section contact */
+
+#contact {
+    height: calc(100vh - 4rem);
+    background-color: var(--black);
+    display: grid;
+    place-items: center;
+}
+
+#contact h2 {
+    font-size: 4.5rem;
+    color: var(--white);
+}
+
+#contact p {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+#contact ul {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact ul li {
+    margin-right: 3rem;
+}
+
+#contact ul li:last-of-type {
+    margin-right: none;
+}
+
+#contact ul a {
+    height: 20rem;
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+#contact ul a:hover {
+    color: aquamarine;
+    padding: 10rem 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 3rem;
+    padding: 1rem 0;
+    border-top: 2px solid var(--orange);
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
+
+.foot a {
+    color: var(--white);
+}
+
+.foot a:hover {
+    color: goldenrod;
+}
