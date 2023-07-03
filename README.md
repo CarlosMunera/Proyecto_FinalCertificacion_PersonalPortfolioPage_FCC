@@ -1,4 +1,4 @@
-# Proyecto 4 para Certificación RESPONSIVE WEB DESIGN - FreeCodeCamp
+# Proyecto para Certificación RESPONSIVE WEB DESIGN - FreeCodeCamp
 
 ## Personal Portfolio Webpage
 Objetivo: Construir una aplicación similar a un portafolio.
